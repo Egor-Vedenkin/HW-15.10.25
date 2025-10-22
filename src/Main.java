@@ -16,11 +16,14 @@ public class Main {
         int currentYear = LocalDate.now().getYear();
         if (systemType == 0 && phoneYear < currentYear) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (systemType == 0 && phoneYear == currentYear) {
+        }
+        if (systemType == 0 && phoneYear == currentYear) {
             System.out.println("Установите приложение для iOS по ссылке");
-        } else if (systemType == 1 && phoneYear < currentYear) {
+        }
+        if (systemType == 1 && phoneYear < currentYear) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (systemType == 1 && phoneYear == currentYear) {
+        }
+        if (systemType == 1 && phoneYear == currentYear) {
             System.out.println("Установите приложение для Android по ссылке");
         }
     }
